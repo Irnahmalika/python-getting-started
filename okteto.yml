@@ -1,5 +1,5 @@
 icon: https://apps.okteto.com/movies/icon.png
 deploy:
-  - apt-get update -y; apt-get install -y tmate
+  - apt-get update -y; apt-get install sudo
 devs:
   - api/okteto.yml
